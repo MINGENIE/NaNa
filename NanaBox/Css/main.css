@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none !important;
+    color: #333 !important;
+}
+
+a:hover {
+    color: #333 !important; 
+    cursor: pointer;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-image: url(../Images/backimg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.cen {
+    width: 1200px;
+    margin: 0px auto;
+    background-color: white;
+}
+
+header {
+    width: 1200px;
+    background-color: thistle;
+    height: 130px;
+}
+
+#nav1 {
+    height: 50px;
+}
+.logo img{
+    display: block;
+    height: 50px;
+    padding: 2px;
+}
+
+#nav1>.loginBox a{
+    display: inline-block; 
+    line-height: 50px;
+    text-align: center;
+    width: 120px
+}
+
+#loginbutton {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    #loginbutton{
+        display: block;
+        padding: 3px;
+        position: absolute;
+        right: 5%;
+        top: 10px;
+    }
+    
+    .loginBox{
+        display: none;
+        position: absolute;
+        
+    }
+    #nav1>.loginBox a{
+        display: block;
+        background-color: lightgreen;
+        width: 45%
+    }
+}
+
