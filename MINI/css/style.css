@@ -1,0 +1,297 @@
+@charset "utf-8";
+/* 일반적인 부분 */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-color: black;
+}
+
+.center {
+    width: 1000px;
+    background-color:rgba(255, 255, 255, 1);
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* 헤더부분 */
+header{
+    height: 130px;
+}
+
+.indexNav {
+    height: 130px;
+}
+
+.logo img{
+    display: block;
+}
+.navicon {
+    display: block;
+    width: 80px;
+    margin-bottom: 10px;
+    margin-left: 35px;
+    margin-bottom: 20px;
+}
+
+#myNavbar a {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+#myNavbar>ul>li>a:hover{
+    color: lightcoral;
+}
+#myNavbar .navbar-nav>li {
+    width: 180px;
+}
+
+/* 모바일 */
+@media all and (max-width: 759px){
+    header{
+        height: 90px;
+    }
+    
+    .indexNav {
+        height: 90px;
+    }
+    .logo img{
+        width: 200px;
+    }
+    .navicon {
+        display: none;
+    }
+    .navbar-header{
+        position: relative;
+        padding-bottom: 37px;
+    }
+    .navbar-toggle {
+        position: absolute !important;
+        top: 10px;
+        right: 50%;
+    }
+}
+
+/*모바일 버젼*/
+@media all and (max-width: 600px){
+    header{
+        height: 90px;
+    }
+    
+    .indexNav {
+        height: 90px;
+    }
+    .logo img{
+        width: 200px;
+    }
+    .navicon {
+        display: none;
+    }
+    .navbar-header{
+        position: relative;
+        padding-bottom: 37px;
+    }
+    .navbar-toggle {
+        position: absolute !important;
+        top: 10px;
+        right: 50%;
+    }
+}
+/* 슬라이드 부분 */
+#box {
+    height: 550px;
+    background-color: white;
+}
+
+#slider {
+    width: 900px;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 50px;
+    margin: 0px auto;
+    margin-top: 20px;
+    box-shadow: 3px 3px 15px black;
+}
+
+#move {
+    width: 2700px;
+    height: 550px;
+}
+
+#move>a {
+    float: left;
+    display: block;
+}
+
+#move>a>img {
+    display: block;
+}
+
+/* 랭킹 부분 */
+section {
+    background-color:white;
+    margin-top: 30px;
+    height: 300px;
+}
+
+article {
+    float: left;
+    width: 300px;
+    margin-left: 25px;
+}
+
+article h3 {
+    width: 300px;
+    text-align: center ;
+    font-size:1.5em;
+}
+
+article table {
+    border-collapse: collapse;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+article table td {
+    border-top: 1px solid #333;
+    width: 100px;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+article table td:first-of-type {
+    font-size: 2em;;
+}
+
+article table tr:first-of-type td {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* 푸터부분 */
+footer {
+    height: 100px;
+    background-color: rgb(192, 192, 192);
+}
+
+footer>a  {
+    display: block;
+    float: left;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+footer>a>img {
+    display: block;
+    width: 300px;
+    padding: 15px;
+}
+
+
+footer p {
+    float: left;
+    margin-top: 15px;
+    margin-right: 30px;
+}
+
+/* 로그인 */
+
+#login{
+    height: 300px;
+    background-color: white;
+    padding-top: 50px;
+}
+
+#loginBox{
+    width: 400px;
+    height: 200px;
+    margin: 0px auto;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px rgba(27, 27, 27, 0.7);
+    padding: 60px;;
+}
+
+#loginBox label{
+    font-size: 1.2em;
+    width: 80px;
+}
+
+#loginBox input {
+    padding: 5px;
+    margin: 3px;
+}
+#submitlogin {
+    float: right;
+}
+#loginBox a {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: rgb(136, 136, 136);
+}
+
+
+/* 모달이미지 */
+#modal {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+}
+
+#modalBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    padding-bottom: 30ㅔㅌpx;
+    background-color: white;
+}
+
+#close {
+    float: right;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+
+}
+
+#modalBox>img {
+    clear: both;
+    display: block;
+    width: 250px;
+    box-shadow: 2px 2px 10px gray;
+}
+
+#modalBox>p {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+
+
+/* 회원가입 */
+
